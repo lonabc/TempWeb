@@ -1,0 +1,11 @@
+D:\Cshap_Project\IRepository\bin\Debug\net8.0\IRepository.deps.json
+D:\Cshap_Project\IRepository\bin\Debug\net8.0\IRepository.dll
+D:\Cshap_Project\IRepository\bin\Debug\net8.0\IRepository.pdb
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.AssemblyInfoInputs.cache
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.AssemblyInfo.cs
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.csproj.CoreCompileInputs.cache
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.dll
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\refint\IRepository.dll
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.pdb
+D:\Cshap_Project\IRepository\obj\Debug\net8.0\ref\IRepository.dll

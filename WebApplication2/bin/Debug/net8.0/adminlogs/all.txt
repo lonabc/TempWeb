@@ -1,0 +1,1 @@
+2025-03-11 19:27:45.6233 |  | WARN | WebApplication2.Controllers.WeatherForecastController.TestLinq |  |  |  | Hello NLog |  |  | 
