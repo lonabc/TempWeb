@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cshap_Project\\TempBack\\WebApplication2\\WebApplication2.csproj": {}
+    "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj": {
+    "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj",
+        "projectUniqueName": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj",
         "projectName": "IRepository",
-        "projectPath": "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj",
-        "packagesPath": "C:\\Users\\24822\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap_Project\\TempBack\\IRepository\\obj\\",
+        "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj",
+        "packagesPath": "C:\\Users\\34015\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\24822\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\34015\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -69,20 +69,20 @@
         }
       }
     },
-    "D:\\Cshap_Project\\TempBack\\Model\\Model.csproj": {
+    "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap_Project\\TempBack\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\Cshap_Project\\TempBack\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\24822\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap_Project\\TempBack\\Model\\obj\\",
+        "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\34015\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\24822\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\34015\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,7 +91,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -140,20 +140,20 @@
         }
       }
     },
-    "D:\\Cshap_Project\\TempBack\\Repository\\Repository.csproj": {
+    "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap_Project\\TempBack\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\Cshap_Project\\TempBack\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\24822\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap_Project\\TempBack\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\34015\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\24822\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\34015\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -162,17 +162,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj": {
-                "projectPath": "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj"
+              "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj": {
+                "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj"
               },
-              "D:\\Cshap_Project\\TempBack\\Model\\Model.csproj": {
-                "projectPath": "D:\\Cshap_Project\\TempBack\\Model\\Model.csproj"
+              "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\Model.csproj"
               }
             }
           }
@@ -212,20 +212,20 @@
         }
       }
     },
-    "D:\\Cshap_Project\\TempBack\\WebApplication2\\WebApplication2.csproj": {
+    "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap_Project\\TempBack\\WebApplication2\\WebApplication2.csproj",
+        "projectUniqueName": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "D:\\Cshap_Project\\TempBack\\WebApplication2\\WebApplication2.csproj",
-        "packagesPath": "C:\\Users\\24822\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap_Project\\TempBack\\WebApplication2\\obj\\",
+        "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\WebApplication2\\WebApplication2.csproj",
+        "packagesPath": "C:\\Users\\34015\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\24822\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\34015\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -234,17 +234,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Cshap_Project\\TempBack\\Model\\Model.csproj": {
-                "projectPath": "D:\\Cshap_Project\\TempBack\\Model\\Model.csproj"
+              "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Model\\Model.csproj"
               },
-              "D:\\Cshap_Project\\TempBack\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\Cshap_Project\\TempBack\\Repository\\Repository.csproj"
+              "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\Repository\\Repository.csproj"
               }
             }
           }

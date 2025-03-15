@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj": {}
+    "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj": {}
   },
   "projects": {
-    "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj": {
+    "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj",
+        "projectUniqueName": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj",
         "projectName": "IRepository",
-        "projectPath": "D:\\Cshap_Project\\TempBack\\IRepository\\IRepository.csproj",
-        "packagesPath": "C:\\Users\\24822\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap_Project\\TempBack\\IRepository\\obj\\",
+        "projectPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\IRepository.csproj",
+        "packagesPath": "C:\\Users\\34015\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\34015\\Desktop\\Temp\\TempBack\\TempWeb\\IRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\24822\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\34015\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {

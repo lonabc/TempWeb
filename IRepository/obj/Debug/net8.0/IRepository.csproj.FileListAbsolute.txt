@@ -9,3 +9,15 @@ D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.dll
 D:\Cshap_Project\IRepository\obj\Debug\net8.0\refint\IRepository.dll
 D:\Cshap_Project\IRepository\obj\Debug\net8.0\IRepository.pdb
 D:\Cshap_Project\IRepository\obj\Debug\net8.0\ref\IRepository.dll
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\bin\Debug\net8.0\IRepository.deps.json
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\bin\Debug\net8.0\IRepository.dll
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\bin\Debug\net8.0\IRepository.pdb
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\IRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\IRepository.AssemblyInfoInputs.cache
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\IRepository.AssemblyInfo.cs
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\IRepository.csproj.CoreCompileInputs.cache
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\IRepository.sourcelink.json
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\IRepository.dll
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\refint\IRepository.dll
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\IRepository.pdb
+C:\Users\34015\Desktop\Temp\TempBack\TempWeb\IRepository\obj\Debug\net8.0\ref\IRepository.dll

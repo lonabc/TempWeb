@@ -11,39 +11,24 @@ namespace WebApplication2.Controllers;
 [Route("User/[action]")]
 public class WeatherForecastController : ControllerBase
 {
-    private SqlContext _context;
-    private IServicemy iser;
-   
 
-
-    private Ireposity<article> ireposity;
-    public WeatherForecastController(
-        SqlContext context,
-        Ireposity<article> ireposity,
-        IServicemy iser)
+    
+    public WeatherForecastController()
     {
         
-        _context = context;
-        this.ireposity = ireposity;
-        this.iser= iser;
+       
+      
+
        
     }
 
  
-    [HttpGet(Name ="register")]
-    public void register(String name,String password)
-    {
-        Console.WriteLine("register");
-        User user = new User(name, password);
-        _context.user.Add(user);
-        _context.SaveChanges();
-    }
   
     [HttpGet(Name = "OpenPort")]
     public void test(int id)
     {
         var serial = new PortLine();
-        serial.OpenPort("COM13");
+        serial.OpenPort("COM3");
 
         // 发送测试数据（例如发送"Hello"）
 

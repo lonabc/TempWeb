@@ -5,35 +5,6 @@
     "version": "1.0"
   },
   "paths": {
-    "/User/register": {
-      "get": {
-        "tags": [
-          "WeatherForecast"
-        ],
-        "operationId": "register",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "password",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/User/test": {
       "get": {
         "tags": [
