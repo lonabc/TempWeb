@@ -2,6 +2,7 @@ using IRepository;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 using Repository;
+using System.Threading.Tasks;
 using WebApplication2.Model;
 
 
@@ -50,5 +51,12 @@ public class WeatherForecastController : ControllerBase
 
         //   serial.ClosePort();
 
+    }
+    [HttpGet(Name = "Socket")]
+    public async Task SocketTest()
+    {
+        SocketServer socketServer = new SocketServer();
+        await socketServer.StartAsync();
+     
     }
 }

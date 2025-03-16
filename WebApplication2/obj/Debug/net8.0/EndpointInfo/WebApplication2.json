@@ -27,6 +27,19 @@
           }
         }
       }
+    },
+    "/User/SocketTest": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "Socket",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": { }

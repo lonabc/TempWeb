@@ -1,6 +1,23 @@
 [
   {
     "ContainingType": "WebApplication2.Controllers.WeatherForecastController",
+    "Method": "SocketTest",
+    "RelativePath": "User/SocketTest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Socket"
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.WeatherForecastController",
     "Method": "test",
     "RelativePath": "User/test",
     "HttpMethod": "GET",
