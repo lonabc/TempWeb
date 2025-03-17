@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -24,7 +25,8 @@ namespace Repository
             {
                 TcpClient client = await _Listener.AcceptTcpClientAsync();
                 Console.WriteLine("会话连接");
-                _ = HandleClientAsync(client);//异步处理客户端，忽略其返回值
+                _ = HandleRead(client);
+                _ = HandleSend(client,"tes");
             }
         }
 
@@ -36,20 +38,56 @@ namespace Repository
                 while (true)
                 {
                     //接受数据
-                    int bytesRead = await stream.ReadAsync(buffer,0,buffer.Length);
+                    int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
                     if (bytesRead == 0) break;
-                    string data = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                    Console.WriteLine("Received:"+data);
-
-
+                    //string data = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    //Console.WriteLine("Received:"+data);
+                    string testdata=  await HandleRead(client);
+                    Console.WriteLine(testdata);
                     // 发送数据给客户端
+                    //string response = "Hello from server!";
+                    //byte[] responseData = Encoding.UTF8.GetBytes(response);
+                    //await stream.WriteAsync(responseData, 0, responseData.Length);
+                    //Console.WriteLine("Sent to client: " + response);
+                    await HandleSend(client,testdata);
+                }
+            }
+            Console.WriteLine("Client disconnected");
+        }
+
+        private async Task<String> HandleRead(TcpClient client)
+        {
+            String data="函数分离测试";
+            using (NetworkStream stream=client.GetStream())
+            {
+                byte[] buffer = new byte[1024];
+                while (true)
+                {
+                    int byteRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+                     if (byteRead==0) break; //客户端断开连接
+                    data = Encoding.UTF8.GetString(buffer, 0, byteRead);
+                    Console.WriteLine("Received:" + data);
+                }
+              
+            }
+            Console.WriteLine("Client disconnected");
+            return data;
+            
+        }
+
+        private async Task HandleSend(TcpClient client,String data)
+        {
+            using (NetworkStream stream = client.GetStream())
+            {
+                while (true)
+                {
                     string response = "Hello from server!";
                     byte[] responseData = Encoding.UTF8.GetBytes(response);
                     await stream.WriteAsync(responseData, 0, responseData.Length);
                     Console.WriteLine("Sent to client: " + response);
+                    await  Task.Delay(3000);
                 }
             }
-            Console.WriteLine("Client disconnected");
         }
     }
 }
