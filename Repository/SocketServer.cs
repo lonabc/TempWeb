@@ -64,7 +64,7 @@ namespace Repository
                 while (true)
                 {
                     int byteRead = await stream.ReadAsync(buffer, 0, buffer.Length);
-                     if (byteRead==0) break; //客户端断开连接
+                    if (byteRead==0) break; //客户端断开连接
                     data = Encoding.UTF8.GetString(buffer, 0, byteRead);
                     Console.WriteLine("Received:" + data);
                 }
@@ -77,15 +77,26 @@ namespace Repository
 
         private async Task HandleSend(TcpClient client,String data)
         {
+           
             using (NetworkStream stream = client.GetStream())
             {
                 while (true)
                 {
                     string response = "Hello from server!";
-                    byte[] responseData = Encoding.UTF8.GetBytes(response);
-                    await stream.WriteAsync(responseData, 0, responseData.Length);
+                    // byte[] responseData = Encoding.UTF8.GetBytes(response); //将字符串转换为字节
+                    int[] tempArr = NumDelImp<int[]>.arr;
+                    int newTemp = NumDelImp<int[]>.newTemp;
+
+                   // byte[] byteArray = new byte[tempArr.Length * sizeof(int)]; // 计算字节流长度
+                    byte[] byteNewTemp = BitConverter.GetBytes(newTemp);
+
+
+                    //Buffer.BlockCopy(tempArr, 0, byteArray, 0, byteArray.Length); //将数组转换为字节流
+
+                    // await stream.WriteAsync(byteArray, 0, byteArray.Length);
+                    await stream.WriteAsync(byteNewTemp, 0, byteNewTemp.Length);
                     Console.WriteLine("Sent to client: " + response);
-                    await  Task.Delay(3000);
+                    await  Task.Delay(1000); 
                 }
             }
         }

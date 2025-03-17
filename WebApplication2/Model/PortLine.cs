@@ -94,8 +94,8 @@ namespace WebApplication2.Model
             Console.WriteLine("接收到数据（十进制）:");
             foreach (byte b in buffer)
             {
-               numMethod.numDely(b);
-
+                numMethod.numDely(b);
+                NumDelImp<int[]>.newTemp=b;
                 Console.WriteLine(b); // 打印字节的十进制值
             }
     

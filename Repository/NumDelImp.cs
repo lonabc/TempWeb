@@ -5,7 +5,9 @@ namespace Repository
 {
     public class NumDelImp<T> : INumDel<T> where T : class //车市
     {
-        public static int[] arr = new int[10];
+        public static int[] arr = new int[3];
+        public static int newTemp = 0;
+
         private static int currentIndex=0;
         public void numMove(int[] arr)
         {

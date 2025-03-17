@@ -41,12 +41,12 @@ public class WeatherForecastController : ControllerBase
         Console.WriteLine("按任意键退出...");
         Console.ReadKey();
         NumDelImp<int[]> numMethod=new NumDelImp<int[]>();
-        numMethod.printArr();
-        //int[] arr = NumDelImp<int[]>.arr;
-        //for (int i = 0; i < arr.Length; i++)
-        //{
-        //    Console.WriteLine(arr[i]);
-        //}
+        // numMethod.printArr();
+        int[] arr = NumDelImp<int[]>.arr;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            Console.WriteLine(arr[i]);
+        }
 
 
         //   serial.ClosePort();
