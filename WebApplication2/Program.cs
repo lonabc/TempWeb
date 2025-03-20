@@ -1,3 +1,4 @@
+
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Model;
 using Repository;
@@ -46,8 +47,11 @@ builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("Smt")
 #region 注册服务配置新版
 builder.Services.AddScoped(typeof(INumDel<>), typeof(NumDelImp<>)); //指定了泛型类型
 builder.Services.AddScoped<TestClass>();
+builder.Services.AddScoped<CacheMy>();
 #endregion
 
+//将内存缓存相关服务注册到依赖注入容器里
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.
@@ -58,6 +62,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
+
+app.UseResponseCaching(); //针对每个
 
 app.MapControllers();
 
