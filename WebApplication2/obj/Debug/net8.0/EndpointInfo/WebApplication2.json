@@ -5,6 +5,52 @@
     "version": "1.0"
   },
   "paths": {
+    "/HomeController/testCache": {
+      "get": {
+        "tags": [
+          "Home"
+        ],
+        "operationId": "TestCache",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/HomeController/testException": {
+      "post": {
+        "tags": [
+          "Home"
+        ],
+        "operationId": "Exception",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/User/test": {
       "get": {
         "tags": [

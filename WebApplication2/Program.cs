@@ -6,6 +6,8 @@ using IRepository;
 using Model;
 using MySqlConnector;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Mvc;
+using Repository.Filter;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -40,7 +42,15 @@ IConfigurationRoot config = configBuilder.Build();
 // °ó¶¨ DbSettings ÅäÖÃ
 builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("Db"));
 builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("Smt"));
-
+//×¢²áÒì³£²Ù×÷Æ÷
+builder.Services.Configure<MvcOptions>(options => {
+    options.Filters.Add<MyExceptionFilter>();
+});
+//×¢²á²Ù×÷É¸Ñ¡Æ÷
+builder.Services.Configure<MvcOptions>(Options => {
+    Options.Filters.Add<MyActionFilter1>();
+ //   Options.Filters.Add<MyActionFilter2>();
+});
 #endregion
 
 

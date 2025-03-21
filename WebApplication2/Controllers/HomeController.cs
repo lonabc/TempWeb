@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.OpenApi.Expressions;
 using Repository;
 using System.Threading.Tasks;
 
@@ -25,12 +26,21 @@ namespace WebApplication2.Controllers
             var items = await memCache.GetOrCreateAsync("AllBooks", async(e) =>
             {
                 e.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(10); //设置绝对过期时间为10秒
+                e.SlidingExpiration = TimeSpan.FromSeconds(2);//设置滑动过期时间
                 Console.WriteLine("从数据库中获取数据");
                 return await cacheMy.testRead();
             });
 
             Console.WriteLine("数据返回");
             return DateTime.Now;
+        }
+        [HttpPost(Name = "Exception")]
+        [ResponseCache(Duration = 5)]
+        public void testException()
+        {
+
+            Console.WriteLine("dd");
+
         }
 
     }
