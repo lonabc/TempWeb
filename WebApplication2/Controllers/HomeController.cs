@@ -39,9 +39,10 @@ namespace WebApplication2.Controllers
         public void testException(String password)
         {
 
-            Console.WriteLine("dd");
-
+            Console.WriteLine("dddd");
+            Console.WriteLine("goodIdea");
         }
+
 
     }
 }
