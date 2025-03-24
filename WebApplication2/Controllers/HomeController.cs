@@ -34,9 +34,9 @@ namespace WebApplication2.Controllers
             Console.WriteLine("数据返回");
             return DateTime.Now;
         }
-        [HttpPost(Name = "Exception")]
+        [HttpGet(Name = "Exception")]
         [ResponseCache(Duration = 5)]
-        public void testException()
+        public void testException(String password)
         {
 
             Console.WriteLine("dd");

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Repository/1.0.0": {
         "dependencies": {
+          "Dynamic.Json": "1.4.1",
           "IRepository": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.3.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.3.0",
@@ -16,6 +17,14 @@
         },
         "runtime": {
           "Repository.dll": {}
+        }
+      },
+      "Dynamic.Json/1.4.1": {
+        "runtime": {
+          "lib/net8.0/Dynamic.Json.dll": {
+            "assemblyVersion": "1.4.1.0",
+            "fileVersion": "1.4.1.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.3.0": {
@@ -843,6 +852,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Dynamic.Json/1.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-74hR3DqQYHW3CbfxarjAeBzGgTUr/wWr7ZeBE2UaATzrOy4/eSn3orFJGpiYrb9mck8Zauh+Hf4cljXFLe4vnQ==",
+      "path": "dynamic.json/1.4.1",
+      "hashPath": "dynamic.json.1.4.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.3.0": {
       "type": "package",

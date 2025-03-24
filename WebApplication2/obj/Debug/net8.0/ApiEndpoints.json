@@ -1,5 +1,49 @@
 [
   {
+    "ContainingType": "WebApplication2.Controllers.HomeController",
+    "Method": "testCache",
+    "RelativePath": "HomeController/testCache",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.DateTime",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "TestCache"
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.HomeController",
+    "Method": "testException",
+    "RelativePath": "HomeController/testException",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Exception"
+  },
+  {
     "ContainingType": "WebApplication2.Controllers.WeatherForecastController",
     "Method": "SocketTest",
     "RelativePath": "User/SocketTest",

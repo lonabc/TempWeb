@@ -39,11 +39,20 @@
       }
     },
     "/HomeController/testException": {
-      "post": {
+      "get": {
         "tags": [
           "Home"
         ],
         "operationId": "Exception",
+        "parameters": [
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"

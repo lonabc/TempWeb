@@ -8,6 +8,7 @@ using MySqlConnector;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Filter;
+using Microsoft.AspNetCore.Builder;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -60,10 +61,28 @@ builder.Services.AddScoped<TestClass>();
 builder.Services.AddScoped<CacheMy>();
 #endregion
 
+
+
 //将内存缓存相关服务注册到依赖注入容器里
 builder.Services.AddMemoryCache();
 
 var app = builder.Build();
+
+#region  中间件服务测试
+app.Map("/HomeController", async appbuilder => //设置中间件map
+{
+    appbuilder.UseMiddleware<CheckAndParsingMiddleware>();
+    appbuilder.Run(async ctx => {
+        ctx.Response.ContentType = "text/html";
+        ctx.Response.StatusCode = 200;
+        dynamic jsonObj = ctx.Items["BodyJson"];
+        int i = jsonObj.i;
+        int j = jsonObj.j;
+        await ctx.Response.WriteAsync($"{i}+{j}={i + j}");
+    });
+});
+#endregion
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
