@@ -9,6 +9,10 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Filter;
 using Microsoft.AspNetCore.Builder;
+using Repository.JwtConfig;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -33,6 +37,27 @@ builder.Services.AddSwaggerGen();
 //        options.UseMySql(sqlConnection, serverVersion);
 //    });
 //}
+#endregion
+
+#region jwt配置
+builder.Services.Configure<JWTSettings>(builder.Configuration.GetSection("JWT"));
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
+    x => {
+        var jwtOpt = builder.Configuration.GetSection("JWT").Get<JWTSettings>();
+        byte[] keyBytes = Encoding.UTF8.GetBytes(jwtOpt.SecKey);
+        var secKey = new SymmetricSecurityKey(keyBytes);
+        x.TokenValidationParameters = new()
+        {
+            ValidateIssuer = false, // 是否验证颁发者（Issuer）
+            ValidateAudience = false, // 是否验证受众（Audience）
+            ValidateLifetime = true, //开启jwt令牌的生命周期验证
+            ValidateIssuerSigningKey = true, //开启seckey验证
+            IssuerSigningKey = secKey
+        };
+    }
+ );
+
 #endregion
 
 #region 注册服务配置旧版
@@ -69,18 +94,18 @@ builder.Services.AddMemoryCache();
 var app = builder.Build();
 
 #region  中间件服务测试
-app.Map("/HomeController", async appbuilder => //设置中间件map
-{
-    appbuilder.UseMiddleware<CheckAndParsingMiddleware>();
-    appbuilder.Run(async ctx => {
-        ctx.Response.ContentType = "text/html";
-        ctx.Response.StatusCode = 200;
-        dynamic jsonObj = ctx.Items["BodyJson"];
-        int i = jsonObj.i;
-        int j = jsonObj.j;
-        await ctx.Response.WriteAsync($"{i}+{j}={i + j}");
-    });
-});
+//app.Map("/HomeController", async appbuilder => //设置中间件map
+//{
+//    appbuilder.UseMiddleware<CheckAndParsingMiddleware>();
+//    appbuilder.Run(async ctx => {
+//        ctx.Response.ContentType = "text/html";
+//        ctx.Response.StatusCode = 200;
+//        dynamic jsonObj = ctx.Items["BodyJson"];
+//        int i = jsonObj.i;
+//        int j = jsonObj.j;
+//        await ctx.Response.WriteAsync($"{i}+{j}={i + j}");
+//    });
+//});
 #endregion
 
 // Configure the HTTP request pipeline.

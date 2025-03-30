@@ -16,14 +16,8 @@ public class WeatherForecastController : ControllerBase
     
     public WeatherForecastController()
     {
-        
-       
-      
-
        
     }
-
- 
   
     [HttpGet(Name = "OpenPort")]
     public void test(int id)
