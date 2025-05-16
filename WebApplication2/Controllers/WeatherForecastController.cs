@@ -23,7 +23,7 @@ public class WeatherForecastController : ControllerBase
     public void test(int id)
     {
         var serial = new PortLine();
-        serial.OpenPort("COM3");
+        serial.OpenPort($"COM{id}");
 
         // 发送测试数据（例如发送"Hello"）
 

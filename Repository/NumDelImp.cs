@@ -8,6 +8,8 @@ namespace Repository
         public static int[] arr = new int[3];
         public static int newTemp = 0;
 
+        public static float temp = 0;
+
         private static int currentIndex=0;
         public void numMove(int[] arr)
         {
@@ -30,6 +32,9 @@ namespace Repository
                 currentIndex--; //索引减1
             }
         }
+
+
+        
 
         public async Task numDely(int num)
         {

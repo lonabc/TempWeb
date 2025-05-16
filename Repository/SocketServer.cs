@@ -84,7 +84,7 @@ namespace Repository
                 {
                     string response = "Hello from server!";
                     // byte[] responseData = Encoding.UTF8.GetBytes(response); //将字符串转换为字节
-                    int[] tempArr = NumDelImp<int[]>.arr;
+                 //   int[] tempArr = NumDelImp<int[]>.arr;
                     int newTemp = NumDelImp<int[]>.newTemp;
 
                    // byte[] byteArray = new byte[tempArr.Length * sizeof(int)]; // 计算字节流长度

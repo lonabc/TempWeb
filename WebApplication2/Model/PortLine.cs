@@ -21,7 +21,7 @@ namespace WebApplication2.Model
         {
         }
 
-        public void OpenPort(string portName, int baudRate = 9600)
+        public void OpenPort(string portName, int baudRate = 115200)
         {
             _serialPort = new SerialPort(portName)
             {
@@ -32,9 +32,10 @@ namespace WebApplication2.Model
             };
 
             // 数据接收事件
-           //  _serialPort.DataReceived += HandleDataReceived;
-           // _serialPort.DataReceived += HandleTextDataReceived;
-           _serialPort.DataReceived += HandleNumberReceived;
+            //  _serialPort.DataReceived += HandleDataReceived;
+            // _serialPort.DataReceived += HandleTextDataReceived;
+            // _serialPort.DataReceived += HandleNumberReceived;
+            _serialPort.DataReceived += HandleFloatReceived;    
             try
             {
                 _serialPort.Open();
@@ -84,7 +85,7 @@ namespace WebApplication2.Model
             Console.WriteLine($"接收到数据（实际内容）: {receivedData}");
         }
 
-        //接收数字数据转换为10进制    
+        //接收整数数字数据转换为10进制    
         private async void  HandleNumberReceived(object sender, SerialDataReceivedEventArgs e)
         {
             NumDelImp<int[]> numMethod = new NumDelImp<int[]>();
@@ -99,6 +100,28 @@ namespace WebApplication2.Model
                 Console.WriteLine(b); // 打印字节的十进制值
             }
     
+        }
+
+        private async void HandleFloatReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+
+            string receivedString = _serialPort.ReadExisting();
+
+            // 去除可能的换行符和空白字符
+            receivedString = receivedString.Trim();
+
+            // 明确指定使用点号作为小数点的格式
+            if (float.TryParse(receivedString,
+                              System.Globalization.NumberStyles.Float,
+                              System.Globalization.CultureInfo.InvariantCulture,
+                              out float receivedFloat))
+            {
+                Console.WriteLine($"接收到数据: {receivedFloat}");
+            }
+            else
+            {
+                Console.WriteLine($"无效数据: '{receivedString}'");
+            }
         }
     }
 }
